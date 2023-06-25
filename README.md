@@ -40,7 +40,8 @@ E) change the URL to get stats of season 2021-2022:
 #Note: create the Stats directory to store all the .json files of the statistics
     
 2- Data Transformation: 
-   A- add spark-sql package to your build.sbt: 
+
+A) add spark-sql package to your build.sbt: 
 
     name := "Transform"
     
@@ -50,7 +51,7 @@ E) change the URL to get stats of season 2021-2022:
     
     libraryDependencies ++= Seq("com.lihaoyi" %% "requests" % "0.8.0", "com.lihaoyi" %% "upickle" % "3.1.0", "com.lihaoyi" %% "os-lib" % "0.9.0", "org.apache.spark" %% "spark-sql" % "3.3.1" % "provided")
 
-    B- compile the Transform.scala file using sbt package command
+B) compile the Transform.scala file using sbt package command
 
-    C- run the scala file to write show DataFrame and write the final .csv files to the directory using spark-submit: 
+C) run the scala file to show DataFrame and write the final .csv files to the directory using spark-submit: 
     spark-submit --class "Transform" --master "local[*]" target/scala-2.12/transform_2.12-1.0.jar
