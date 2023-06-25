@@ -19,8 +19,11 @@ Perform transform and write the DataFrame to .csv files.
 
 PREREQUISITES: 
 - sbt package manager: install sbt
+
   to check sbt version, run the command 'sbt -version'
+
   to enter the console of sbt, run 'sbt'. This instruction also created the folder project and target
+  
 - Java JMV
 - Scala
 - Spark
