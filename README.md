@@ -2,6 +2,7 @@ During my Data Engineering course, I have worked on this project to practice all
 The goal of this Repository is to make a simple ETL using this API (https://app.balldontlie.io/#introduction) giving data on the NBA with Scala, then processing the data collected with Spark to have CSV files. There is no key required to requests the API.
 
 REQUIREMENTS:
+
 Collect the matches for the 2021-2022 season of the following teams :
 
 Phoenix Suns
