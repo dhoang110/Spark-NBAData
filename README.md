@@ -44,6 +44,7 @@ A) your built.sbt file should look like this:
 B) compile the Extract.scala file using sbt package command
 
 C) run the scala file to write .json files to the directory using spark-submit: 
+
 spark-submit --class "Extract" --master "local[*]" --packages com.lihaoyi:requests_2.12:0.8.0,com.lihaoyi:upickle_2.12:3.1.0,com.lihaoyi:os-lib_2.12:0.9.0 target/scala-2.12/extract_2.12-1.0.jar
 
 #Note: create the GamesData directory to store all the .json files of the matches
@@ -56,7 +57,8 @@ D) change the URL & filename accordingly to get games of a specific team:
     Milwaukee Bucks: "https://www.balldontlie.io/api/v1/games?seasons[]=2021&team_ids[]=17"
 
 E) change the URL to get stats of season 2021-2022:
-    "https://www.balldontlie.io/api/v1/stats?seasons[]=2021&per_page=100&page=" 
+
+"https://www.balldontlie.io/api/v1/stats?seasons[]=2021&per_page=100&page=" 
     
 #Note: create the Stats directory to store all the .json files of the statistics
     
@@ -76,4 +78,5 @@ A) add spark-sql package to your build.sbt:
 B) compile the Transform.scala file using sbt package command
 
 C) run the scala file to show DataFrame and write the final .csv files to the directory using spark-submit: 
-    spark-submit --class "Transform" --master "local[*]" target/scala-2.12/transform_2.12-1.0.jar
+
+spark-submit --class "Transform" --master "local[*]" target/scala-2.12/transform_2.12-1.0.jar
