@@ -26,6 +26,7 @@ PREREQUISITES:
 - Spark
 
 1- Data Extraction: 
+
 A) your built.sbt file should look like this:
 
     name := "Extract"
