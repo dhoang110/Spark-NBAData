@@ -35,7 +35,8 @@ A) your built.sbt file should look like this:
 
     scalaVersion := "2.12.15"
 
-    libraryDependencies ++= Seq("com.lihaoyi" %% "requests" % "0.8.0", "com.lihaoyi" %% "upickle" % "3.1.0", "com.lihaoyi" %% "os-lib" % "0.9.0")
+    libraryDependencies ++= Seq("com.lihaoyi" %% "requests" % "0.8.0", "com.lihaoyi" %% "upickle" % "3.1.0",
+    "com.lihaoyi" %% "os-lib" % "0.9.0")
 
 B) compile the Extract.scala file using sbt package command
 
@@ -66,7 +67,8 @@ A) add spark-sql package to your build.sbt:
     
     scalaVersion := "2.12.15"
     
-    libraryDependencies ++= Seq("com.lihaoyi" %% "requests" % "0.8.0", "com.lihaoyi" %% "upickle" % "3.1.0", "com.lihaoyi" %% "os-lib" % "0.9.0", "org.apache.spark" %% "spark-sql" % "3.3.1" % "provided")
+    libraryDependencies ++= Seq("com.lihaoyi" %% "requests" % "0.8.0", "com.lihaoyi" %% "upickle" % "3.1.0", 
+    "com.lihaoyi" %% "os-lib" % "0.9.0", "org.apache.spark" %% "spark-sql" % "3.3.1" % "provided")
 
 B) compile the Transform.scala file using sbt package command
 
